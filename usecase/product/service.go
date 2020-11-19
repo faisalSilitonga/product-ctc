@@ -60,7 +60,7 @@ func (s *Service) ListProducts() ([]*entity.Product, error) {
 func (s *Service) CreateProduct(sku string, name string, catalogID int64, price float32, quantity int) (entity.ID, error) {
 	p, err := entity.NewProduct(sku, name, catalogID, price, quantity)
 	if err != nil {
-		return p.ID, err
+		return entity.NewID(), err
 	}
 	return s.repo.Create(p)
 }

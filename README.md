@@ -6,6 +6,11 @@ Based on [Post: Clean Architecture, 2 years later](https://eltonminetto.dev/en/p
 
 Clean Architecture based on => [Uncle Bob](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
 
+
+# API Documentation
+
+API Documentation in [Postman](https://documenter.getpostman.com/view/13179409/TVes7mX8#07cc5871-16a1-475d-ad43-2ce13ec31d73)
+
 ## Build
 
   make
@@ -14,6 +19,11 @@ Clean Architecture based on => [Uncle Bob](https://blog.cleancoder.com/uncle-bob
 
   make test
 
+## Run tests
+
+  make run
+
+  
 ## API requests 
 
 ### Add Product

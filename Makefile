@@ -6,7 +6,7 @@ SHELL  := env LIBRARY_ENV=$(LIBRARY_ENV) $(SHELL)
 LIBRARY_ENV ?= dev
 
 BIN_DIR = $(PWD)/bin
-BINARY=engine
+BINARY=bin/engine
 
 .PHONY: build
 

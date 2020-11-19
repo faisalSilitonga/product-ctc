@@ -62,7 +62,7 @@ func createProduct(service product.UseCase) http.Handler {
 			SKU       string  `json:"sku"`
 			CatalogID int64   `json:"catalogid"`
 			Price     float32 `json:"price"`
-			Quantity  int     `json:"quantiry"`
+			Quantity  int     `json:"quantity"`
 		}
 		err := json.NewDecoder(r.Body).Decode(&input)
 		if err != nil {
@@ -105,7 +105,7 @@ func updateProduct(service product.UseCase) http.Handler {
 			SKU       string  `json:"sku"`
 			CatalogID int64   `json:"catalogid"`
 			Price     float32 `json:"price"`
-			Quantity  int     `json:"quantiry"`
+			Quantity  int     `json:"quantity"`
 			Status    int     `json:"status"`
 		}
 		err := json.NewDecoder(r.Body).Decode(&input)

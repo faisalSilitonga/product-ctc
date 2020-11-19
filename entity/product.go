@@ -40,7 +40,7 @@ func NewProduct(sku string, name string, catalogID int64, price float32, quantit
 
 //Validate validate product
 func (p *Product) Validate() error {
-	if p.Name == "" || p.Quantity < 0 || p.Price <= 100 {
+	if p.Name == "" || p.Quantity < 0 || p.Price < 100 {
 		return ErrInvalidEntity
 	}
 	return nil
@@ -49,4 +49,9 @@ func (p *Product) Validate() error {
 //Show print detail product
 func (p *Product) Show() {
 	fmt.Println("Name = ", p.Name)
+	fmt.Println("SKU = ", p.SKU)
+	fmt.Println("CatalogID = ", p.CatalogID)
+	fmt.Println("Quantity = ", p.Quantity)
+	fmt.Println("Price = ", p.Price)
+	fmt.Println("Status = ", p.Status)
 }
